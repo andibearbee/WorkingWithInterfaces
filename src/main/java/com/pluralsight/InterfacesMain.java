@@ -16,5 +16,11 @@ public class InterfacesMain {
         friendsCharacters.add(new Person("Rachel", "Green", 24));
 
         Collections.sort(friendsCharacters);
+
+
+        for (Person person:friendsCharacters) {
+
+            System.out.println(person);
+        }
     }
 }

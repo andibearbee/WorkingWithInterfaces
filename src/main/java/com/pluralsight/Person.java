@@ -2,7 +2,7 @@ package com.pluralsight;
 
 import java.beans.PersistenceDelegate;
 
-public class Person implements Comparable {
+public class Person implements Comparable<Person> {
     public String firstName, lastName;
     public int age;
 
@@ -10,6 +10,11 @@ public class Person implements Comparable {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " " + age;
     }
 
     @Override
